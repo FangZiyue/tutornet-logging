@@ -11,7 +11,7 @@ scrape_configs:
         port: 9090
         type: A # Render service discovery uses A records
         refresh_interval: 5s # Refresh the list of targets every 5 seconds
-    metrics_path: /actuator/prometheus
+    metrics_path: /prometheus
     
   # Uncomment to add a job for scraping another Render service
   - job_name: 'tutornet-gateway' # Replace w/ your service's name
